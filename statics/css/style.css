@@ -9523,6 +9523,8 @@ background-color:rgb(222 232 255);
    letter-spacing: -3px;
    line-height: 83px;
    max-width: 70vw;
+   animation: CreatorProPageBanner-fadeIn-lzt .5s .25s ease-in-out forwards;
+    opacity: 0;
 }
 
 .banner-header span {
@@ -9537,6 +9539,8 @@ background-color:rgb(222 232 255);
    margin: 40px 0 60px;
    max-width: 826px;
    width: 100%;
+   animation: CreatorProPageBanner-fadeIn-lzt .5s .3s ease-in-out forwards;
+   opacity: 0;
 }
 
 .banner-cta {
