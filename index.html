@@ -189,6 +189,258 @@
         </div>
     </div>
     <div class="contentLayout">
+        <div aria-hidden="false" style="display: none;" class="search-sidebar" role="region" aria-label="Filter search results. To toggle between the filters and search input press F6">
+            <div class="accordion-wrapper">
+                <button class="sidebar-header-button">
+                    <span class="sidebar-header-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" class="filter-icon">
+                            <path d="M15.8,2H6.9C6.7,0.7,5.4-0.2,4,0.1C3,0.3,2.2,1,2,2H0.2C0.1,2,0,2.1,0,2.3v0.5
+                                C0,2.9,0.1,3,0.2,3H2C2.3,4.4,3.6,5.2,5,5c1-0.2,1.8-1,1.9-2h8.8C15.9,3,16,2.9,16,2.8V2.3C16,2.1,15.9,2,15.8,2z M4.5,4
+                                C3.7,4,3,3.3,3,2.5S3.7,1,4.5,1S6,1.7,6,2.5S5.3,4,4.5,4z"></path>
+                            <path d="M15.8,12H8.9C8.7,10.7,7.4,9.8,6,10.1c-1,0.2-1.8,1-1.9,1.9H0.2C0.1,12,0,12.1,0,12.3v0.5
+                                C0,12.9,0.1,13,0.2,13h3.8C4.3,14.4,5.6,15.2,7,15c1-0.2,1.8-1,1.9-1.9h6.8c0.1,0,0.2-0.1,0.2-0.2v-0.5C16,12.1,15.9,12,15.8,12z
+                                M6.5,14C5.7,14,5,13.3,5,12.5S5.7,11,6.5,11S8,11.7,8,12.5S7.3,14,6.5,14z"></path>
+                            <path d="M0,7.3v0.5C0,7.9,0.1,8,0.2,8h8.8c0.3,1.4,1.6,2.2,2.9,1.9c1-0.2,1.8-1,1.9-1.9h1.8
+                                C15.9,8,16,7.9,16,7.8V7.3C16,7.1,15.9,7,15.8,7h-1.8c-0.3-1.3-1.6-2.2-2.9-1.9C10,5.3,9.2,6,9.1,7H0.2C0.1,7,0,7.1,0,7.3z
+                                M10,7.5 C10,6.7,10.7,6,11.5,6S13,6.7,13,7.5S12.3,9,11.5,9S10,8.3,10,7.5z"></path>
+                        </svg>
+                        <h2 class="filter-text">Filter</h2>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="filter-collapse-icon">
+                        <g transform="translate(0 0.002)">
+                            <path d="M15.625,10.623h-15a.625.625,0,0,1,0-1.25h15a.625.625,0,0,1,0, 1.25Z"></path>
+                            <path d="M12.5,13.748a.625.625,0,0,1-.442-1.067L14.741,10,12.058,7.315a.625.625,0,0,1,.884-.884l3.125,3.125a.625.625,0,0,1,0,.884l-3.125,3.125A.623.623,0,0,1,12.5,13.748Z"></path>
+                            <path d="M19.375,20a.625.625,0,0,1-.625-.625V.623a.625.625,0,0,1,1.25,0v18.75A.625.625,0,0,1,19.375,20Z"></path>
+                        </g>
+                    </svg>
+                </button>
+                <nav class="result-type-filter" aria-label="Search content type menu">
+                    <a class="filter-link" href="/search/projects" name="filter-button">
+                        <span class="filter-label selected">Projects</span>
+                    </a>
+                    <a class="filter-link" href="/search/assets" name="filter-button">
+                        <span class="filter-label">Assets</span>
+                    </a>
+                    <a class="filter-link" href="/search/images" name="filter-button">
+                        <span class="filter-label">Images</span>
+                    </a>
+                    <a class="filter-link" href="/search/users" name="filter-button">
+                        <span class="filter-label">People</span>
+                    </a>
+                </nav>
+                <div>
+                    <div class="collapsible-section">
+                        <div name="accordion">
+                            <button aria-controls="creative-fields-content" class="collapsible-trigger" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.053 18" aria-hidden="true" class="collapsibleSection"><g><g fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.125" transform="translate(.603 .563)"><rect width="6.75" height="6.75" rx=".75"></rect><circle cx="3.375" cy="3.375" r="3.375" transform="translate(10.125)"></circle><path d="M13.527 9.92a.665.665 0 0 0-1.179 0l-3.252 5.855a.77.77 0 0 0-.005.732.679.679 0 0 0 .595.368h6.505a.679.679 0 0 0 .595-.368.77.77 0 0 0-.005-.732Z"></path><path d="M3.826 9.213a.584.584 0 0 0-.9 0L.144 12.537a.62.62 0 0 0 0 .794l2.781 3.328a.583.583 0 0 0 .9 0l2.781-3.322a.62.62 0 0 0 0-.794Z"></path></g></g></svg>
+                                <span>Creative Fields</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13.42" viewBox="0 0 8 13.42" aria-hidden="true" class="chevron-icon">
+                                    <path d="M1.28,0a1.07,1.07,0,0,1,.25,0L1.77.1A.91.91,0,0,1,2,.21,1.2,1.2,0,0,1,2.2.38L7.62,5.8a1.52,1.52,0,0,1,.28.43,1.15,1.15,0,0,1,.1.48,1.16,1.16,0,0,1-.1.49,1.34,1.34,0,0,1-.28.42L2.2,13a1.42,1.42,0,0,1-.43.29,1.32,1.32,0,0,1-.48.09,1.37,1.37,0,0,1-.49-.09A1.1,1.1,0,0,1,.38,13a1.34,1.34,0,0,1-.28-.42,1.23,1.23,0,0,1,0-1,1.34,1.34,0,0,1,.28-.42L4.9,6.72.38,2.18A1.34,1.34,0,0,1,.1,1.76a1.23,1.23,0,0,1,0-1A1.34,1.34,0,0,1,.38.38L.58.21A.65.65,0,0,1,.8.1L1,0a1,1,0,0,1,.24,0Z"></path>
+                                </svg>
+                            </button>
+                            <fieldset class="collapsible-content" id="creative-fields-content" aria-labelledby="creative-fields-description">
+                                <legend class="screen-reader-only" id="creative-fields-description">Creative Fields</legend>
+                                <div>
+                                    <div role="group" aria-labelledby="popular">
+                                        <div class="fieldset-header" id="popular">Popular</div>
+                                        <div>
+                                            <fieldset class="fieldset">
+                                                <div class="field-label selected">All Creative Fields</div>
+                                                <div class="field-label">Architecture</div>
+                                                <div class="field-label">Art Direction</div>
+                                                <div class="field-label">Branding</div>
+                                                <div class="field-label">Fashion</div>
+                                                <div class="field-label">Graphic Design </div>
+                                                <div class="field-label">Illustration</div>
+                                                <div class="field-label">Industrial Design</div>
+                                                <div class="field-label">Interaction Design</div>
+                                                <div class="field-label">Logo Design</div>
+                                                <div class="field-label">Motion Graphics</div>
+                                                <div class="field-label">Photography</div>
+                                                <div class="field-label">UI/UX</div>
+                                                <div class="field-label">Web Design</div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div role="group" aria-labelledby="alphabetical">
+                                        <div class="fieldset-header" id="alphabetical">Alphabetical</div>
+                                        <div>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">#</legend>
+                                                <div class="field-label">3D Art</div>
+                                                <div class="field-label">3D Modeling</div>
+                                                <div class="field-label">3D Motion</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">a</legend>
+                                                <div class="field-label">Advertising</div>
+                                                <div class="field-label">Advertising Photography</div>
+                                                <div class="field-label">Animation</div>
+                                                <div class="field-label">App Design</div>
+                                                <div class="field-label">Apparel</div>
+                                                <div class="field-label">AR/VR</div>
+                                                <div class="field-label">Architecture</div>
+                                                <div class="field-label">Architecture Concept</div>
+                                                <div class="field-label">Architecture Photography</div>
+                                                <div class="field-label">Architecture Visualization</div>
+                                                <div class="field-label">Art Direction</div>
+                                                <div class="field-label">Automotive Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">b</legend>
+                                                <div class="field-label">Beauty Photography</div>
+                                                <div class="field-label">Branding</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">c</legend>
+                                                <div class="field-label">Calligraphy</div>
+                                                <div class="field-label">CGI</div>
+                                                <div class="field-label">Character Design</div>
+                                                <div class="field-label">Cinematography</div>
+                                                <div class="field-label">Collage</div>
+                                                <div class="field-label">Coloring</div>
+                                                <div class="field-label">Comic</div>
+                                                <div class="field-label">Concept Art</div>
+                                                <div class="field-label">Copywriting</div>
+                                                <div class="field-label">Costume Design</div>
+                                                <div class="field-label">Crafts</div>
+                                                <div class="field-label">Creative Direction</div>
+                                                <div class="field-label">Culinary Arts</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">d</legend>
+                                                <div class="field-label">Digital Art</div>
+                                                <div class="field-label">Digital Painting</div>
+                                                <div class="field-label">Directing</div>
+                                                <div class="field-label">Drawing</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">e</legend>
+                                                <div class="field-label">Editing</div>
+                                                <div class="field-label">Editorial Design</div>
+                                                <div class="field-label">Education</div>
+                                                <div class="field-label">Environmental Graphics</div>
+                                                <div class="field-label">Exhibition Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">f</legend>
+                                                <div class="field-label">Fashion</div>
+                                                <div class="field-label">Fashion Design</div>
+                                                <div class="field-label">Fashion Illustration</div>
+                                                <div class="field-label">Fashion Photography</div>
+                                                <div class="field-label">Fashion Retouching</div>
+                                                <div class="field-label">Fashion Styling</div>
+                                                <div class="field-label">Film</div>
+                                                <div class="field-label">Fine Arts</div>
+                                                <div class="field-label">Flower Arrangement</div>
+                                                <div class="field-label">Food Photography</div>
+                                                <div class="field-label">Food Styling</div>
+                                                <div class="field-label">Furniture Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">g</legend>
+                                                <div class="field-label">Game Design</div>
+                                                <div class="field-label">GIF Animation</div>
+                                                <div class="field-label">Graffiti</div>
+                                                <div class="field-label">Graphic Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">i</legend>
+                                                <div class="field-label">Icon Design</div>
+                                                <div class="field-label">Illustration</div>
+                                                <div class="field-label">Industrial Design</div>
+                                                <div class="field-label">Infographic</div>
+                                                <div class="field-label">Information Architecture</div>
+                                                <div class="field-label">Interaction Design</div>
+                                                <div class="field-label">Interior Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">j</legend>
+                                                <div class="field-label">Jewelry Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">l</legend>
+                                                <div class="field-label">Label Design</div>
+                                                <div class="field-label">Landscape Design</div>
+                                                <div class="field-label">Lettering</div>
+                                                <div class="field-label">Logo Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">m</legend>
+                                                <div class="field-label">Makeup</div>
+                                                <div class="field-label">Makeup Arts</div>
+                                                <div class="field-label">Model Test Photography</div>
+                                                <div class="field-label">Modeling</div>
+                                                <div class="field-label">Motion Graphics</div>
+                                                <div class="field-label">Music</div>
+                                                <div class="field-label">Music Packaging</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">p</legend>
+                                                <div class="field-label">Packaging</div>
+                                                <div class="field-label">Painting</div>
+                                                <div class="field-label">Paperworks</div>
+                                                <div class="field-label">Pattern Design</div>
+                                                <div class="field-label">Performing Arts</div>
+                                                <div class="field-label">Photography</div>
+                                                <div class="field-label">Photography Styling</div>
+                                                <div class="field-label">Photojournalism</div>
+                                                <div class="field-label">Poster Design</div>
+                                                <div class="field-label">Product Design</div>
+                                                <div class="field-label">Product Photography</div>
+                                                <div class="field-label">Programming</div>
+                                                <div class="field-label">Projection Mapping</div>
+                                                <div class="field-label">Props Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">r</legend>
+                                                <div class="field-label">Retouching</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">s</legend>
+                                                <div class="field-label">Sculpting</div>
+                                                <div class="field-label">Set Design</div>
+                                                <div class="field-label">Shoe Design</div>
+                                                <div class="field-label">Sketching</div>
+                                                <div class="field-label">Sound Design</div>
+                                                <div class="field-label">Storyboarding</div>
+                                                <div class="field-label">Street Art</div>
+                                                <div class="field-label">Styleframing</div>
+                                                <div class="field-label">Surface Design</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">t</legend>
+                                                <div class="field-label">T-Shirt Design</div>
+                                                <div class="field-label">Textile Design</div>
+                                                <div class="field-label">Toy Design</div>
+                                                <div class="field-label">Type Design</div>
+                                                <div class="field-label">Typography</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">u</legend>
+                                                <div class="field-label">UI/UX</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">v</legend>
+                                                <div class="field-label">Visual Effects</div>
+                                                <div class="field-label">Visualization</div>
+                                            </fieldset>
+                                            <fieldset class="fieldset">
+                                                <legend class="fieldset-legend">w</legend>
+                                                <div class="field-label">Web Design</div>
+                                                <div class="field-label">Window Design</div>
+                                                <div class="field-label">Woodworking</div>
+                                                <div class="field-label">Writing</div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
         <div class="search-bar">
             <div class="search-wrapper">
                 <div class="toggle-wrapper" aria-hidden="false">
