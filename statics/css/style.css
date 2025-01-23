@@ -5320,7 +5320,7 @@ align-items: baseline;
     }
     
     .Projects-container .js-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .footer-content {
@@ -5375,5 +5375,10 @@ align-items: baseline;
     .accordion-wrapper {
         border: none;
         width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .Projects-container .js-grid{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
