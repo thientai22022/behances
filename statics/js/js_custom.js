@@ -44,33 +44,35 @@ $(document).ready(function() {
             const toggleWrapper = $('.toggle-wrapper');
             const grid = $('.js-grid');
             const bar = $('.search-bar');
-        
-            if (sidebar.is(':hidden')) {
-                sidebar.show(); 
+    
+            if (sidebar.hasClass('hidden')) {
+                sidebar.removeClass('hidden').addClass('visible'); 
                 toggleWrapper.addClass('sidebarToggleButtonHidden'); 
                 grid.addClass('col3');
                 bar.addClass('active'); 
             } else {
-                sidebar.hide(); 
+                sidebar.removeClass('visible').addClass('hidden'); 
                 toggleWrapper.removeClass('sidebarToggleButtonHidden');
                 grid.removeClass('col3'); 
                 bar.removeClass('active'); 
             }
         });
     }
+    
     if ($('.sidebar-header-button').length) {
         $('.sidebar-header-button').on('click', function() {
             const sidebar = $('.search-sidebar');
             const toggleWrapper = $('.toggle-wrapper');
             const grid = $('.js-grid'); 
             const bar = $('.search-bar');
-        
-            sidebar.hide(); 
+            
+            sidebar.removeClass('visible').addClass('hidden'); 
             toggleWrapper.removeClass('sidebarToggleButtonHidden'); 
             grid.removeClass('col3'); 
             bar.removeClass('active'); 
         });
     }
+    
     if ($('.language-selector').length) {
         const $languageSelector = $(".language-selector");
         const $popoverContent = $(".popover-content");

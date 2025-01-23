@@ -210,7 +210,7 @@
         </div>
     </div>
     <div class="contentLayout">
-        <div aria-hidden="false" style="display: none;" class="search-sidebar" role="region" aria-label="Filter search results. To toggle between the filters and search input press F6">
+        <div aria-hidden="false" class="search-sidebar hidden" role="region" aria-label="Filter search results. To toggle between the filters and search input press F6">
             <div class="accordion-wrapper">
                 <button class="sidebar-header-button">
                     <span class="sidebar-header-label">
@@ -1395,6 +1395,70 @@
           </div>
           <div>
             <button class="btn-lang" aria-expanded="false" aria-controls="lang-selector" aria-label="Language Currently Selected: English" aria-haspopup="true">English</button>
+            <div class="popover-content" hidden="hidden">
+                <div class="popover-arrow-wrapper">
+                    <div class="popover-arrow"></div>
+                </div>
+                <ul id="language-options" class="language-selector-tooltip" role="menu" aria-label="Language Options">
+                    <li class="language-item selected" role="menuitem">
+                        <button class="language-btn" data-language-locale="en_US" lang="en-US">English</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="cs_CZ" lang="cs-CZ">Čeština</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="da_DK" lang="da-DK">Dansk</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="de_DE" lang="de-DE">Deutsch</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="es_ES" lang="es-ES">Español</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="fr_FR" lang="fr-FR">Français</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="it_IT" lang="it-IT">Italiano</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="nl_NL" lang="nl-NL">Nederlands</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="nb_NO" lang="nb-NO">Norsk</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="pl_PL" lang="pl-PL">Polski</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="pt_BR" lang="pt-BR">Português</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="ru_RU" lang="ru-RU">Pусский</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="fi_FI" lang="fi-FI">Suomi</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="sv_SE" lang="sv-SE">Svenska</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="tr_TR" lang="tr-TR">Türkçe</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="ja_JP" lang="ja-JP">日本語</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="ko_KR" lang="ko-KR">한국어</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="zh_CN" lang="zh-CN">中文(简体)</button>
+                    </li>
+                    <li class="language-item" role="menuitem">
+                        <button class="language-btn" data-language-locale="zh_TW" lang="zh-TW">中文(繁體)</button>
+                    </li>
+                </ul>
+            </div>
           </div>
           <div>
             <li class="pro-link">

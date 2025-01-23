@@ -1167,7 +1167,7 @@ html {
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: #191919;
     font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 12px;
@@ -2997,10 +2997,6 @@ body:not(.project-editor):not(.vue-route) #top-panel {
     width: 990px
 }
 
-html,body {
-    background: #f9f9f9
-}
-
 #site-container {
     margin: 0 auto;
     width: 990px
@@ -3472,6 +3468,24 @@ flex-direction: row;
 .search-sidebar {
     flex-shrink: 0;
 }
+.search-sidebar {
+    transition: all 0.2s ease-in-out;
+    height: 0;
+    opacity: 0;
+}
+
+.search-sidebar.visible {
+    height: auto; 
+    opacity: 1;
+       width: 330px;
+}
+
+.search-sidebar.hidden {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
 .search-wrapper {
     background-color: #fff;
     margin-top: 0;
@@ -3912,6 +3926,7 @@ align-items: baseline;
     background-color: #f9f9f9;
 }
 .accordion-wrapper {
+    background-color: #fff;
     border-right: 1px solid #e8e8e8;
     height: calc(100vh - 55px);
     overflow-x: hidden;
@@ -4173,6 +4188,8 @@ align-items: baseline;
 }
 .grid-item {
     margin-bottom: 50px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .grid {
     grid-template-columns: repeat(4, 1fr);
