@@ -3113,6 +3113,9 @@ html,body {
     top: 100%;
     transition: transform .15s, opacity .15s;
 }
+.header_top_nav > li:first-child > a::after{
+display: none;
+}
 .header_top_nav > li:hover > a:after{
     opacity:1;
 }
@@ -4423,7 +4426,6 @@ align-items: baseline;
     pointer-events: all;
     text-overflow: ellipsis;
     font-weight: bold;
-    margin-bottom: -2px;
     display: inline-block;
     font-size: 15px;
     padding-bottom: 0;
@@ -4470,7 +4472,38 @@ align-items: baseline;
     display: block;
     color: #191919;
 }
+.grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .badge {
+    flex-shrink: 0;
+    line-height: 13px;
+    padding-left: 6px;
+}
 
+.grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .popover {
+    width: 34px;
+}
+
+.grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .activator {
+    display: block;
+    position: relative;
+    width: inherit;
+    z-index: 3;
+}
+
+.grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .pill {
+    background: linear-gradient(45deg, #0088fd 0%, #003bff 50%, #001faa 100%);
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: default;
+    font-family: "acumin-pro-wide", "Acumin Pro Wide", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 34px;
+}
 .grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-stats .stats {
     align-items: center;
     align-self: flex-end;
@@ -4835,7 +4868,6 @@ align-items: baseline;
     top: -2px;
     width: 0;
 }
-.popover-content {}
 
 .popover-content {
     background: #fff;
