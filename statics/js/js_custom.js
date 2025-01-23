@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.sort-dropdowns .dropdown-button').on('click', function() {
+        $(this).toggleClass('active');
         $('.content-container').toggleClass('active');
     });
     $('.search-input').on('click', function() {
