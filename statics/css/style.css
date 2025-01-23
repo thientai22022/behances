@@ -4109,6 +4109,9 @@ align-items: baseline;
 .toggle-wrapper.sidebarToggleButtonHidden {
     max-width: 0;
 }
+.Search-animated{
+    transition: all .2s ease-in-out
+}
 .search-content {
     background-color: #fff;
     margin-left: auto;
@@ -4181,6 +4184,14 @@ align-items: baseline;
 
 .js-grid.col3 {
     grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 2593px) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .js-grid.col3 {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 @media (min-width: 2149px) and (max-width: 2592px) {
     .grid {
@@ -4689,6 +4700,7 @@ align-items: baseline;
     fill: #fff;
     height: 32px;
     width: 160px;
+    display: inline-block;
 }
 .footer_right {
     display: grid;
@@ -4851,7 +4863,7 @@ align-items: baseline;
     width: 20px;
     display: flex;
     align-items: center;
-    top: 5px;
+    bottom: 5px;
     position: absolute; 
     left: 50px;
 }
