@@ -4556,6 +4556,7 @@ align-items: baseline;
 .signup-btn:hover {
     background: rgb(0 62 203);
     border-color: #00000000;
+    cursor: pointer;
 }
 .signup-btn .btn-label {
     padding: 8px 18px;
