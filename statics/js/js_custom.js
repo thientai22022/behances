@@ -119,16 +119,18 @@ $(document).ready(function() {
     }
     if ($('.footer_fixed').length) {
         const footer = $('.footer_fixed'); 
+        const footerContainer = $('.footer-container'); 
         let lastScrollTop = 0; 
       
         $(window).scroll(function() {
           const scrollTop = $(this).scrollTop(); 
-          const footerContainer = $('.footer-container');
-          const footerOffset = footerContainer.offset().top; 
+          const footerOffset = footerContainer.offset().top-1000; 
       
-          if (scrollTop > lastScrollTop) {
-            if (scrollTop >= footerOffset - $(window).height()) {
+          if (scrollTop >= footerOffset) {
+            if (scrollTop > lastScrollTop) {
               footer.addClass('footer-hidden'); 
+            } else {
+              footer.removeClass('footer-hidden'); 
             }
           } else {
             footer.removeClass('footer-hidden'); 
