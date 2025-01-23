@@ -5370,7 +5370,7 @@ align-items: baseline;
     text-decoration: none;
 }
 @media (max-width: 1024px) {
-    .blocker-ending-long {
+    .blocker-ending-long,.footer_fixed {
         display: none;
     }
     
