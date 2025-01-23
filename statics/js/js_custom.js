@@ -52,14 +52,13 @@ $(document).ready(function() {
     const $languageSelector = $(".language-selector");
     const $popoverContent = $(".popover-content");
 
-    // Tạo Popper.js instance
     const popperInstance = Popper.createPopper($languageSelector[0], $popoverContent[0], {
-        placement: "bottom", // Vị trí popover
+        placement: "bottom",
         modifiers: [
             {
                 name: "offset",
                 options: {
-                    offset: [0, 10], // Khoảng cách từ nút đến popover
+                    offset: [0, 10],
                 },
             },
         ],
@@ -93,4 +92,5 @@ $(document).ready(function() {
             }
         }, 100); 
     });
+});
 });
