@@ -3,6 +3,14 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.content-container').toggleClass('active');
     });
+    $('.nav-hamburger-button').on('click', function() {
+        $('.nav-hamburger-menu').toggleClass('active');
+        $('.option_over').toggleClass('active');
+    });
+    $('.nav-close-button,.option_over').on('click', function() {
+        $('.nav-hamburger-menu').removeClass('active');
+        $('.option_over').removeClass('active');
+    });
     $('.search-input').on('click', function() {
         $('#suggestions').addClass('active');
     });
