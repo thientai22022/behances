@@ -5512,6 +5512,9 @@ align-items: baseline;
     text-align: left;
     text-decoration: none;
 }
+.custom-popover .popover-body .user-row .user-info .user-details .user-name-container .user-name:hover{
+    text-decoration: underline;
+}
 
 .custom-popover .popover-body .user-row .user-info .user-details .user-location {
     overflow: hidden;
@@ -5526,7 +5529,9 @@ align-items: baseline;
     transition: color .2s;
     text-decoration: none;
 }
-
+.custom-popover .popover-body .user-row .user-info .user-details .user-location:hover {
+    color: #191919;
+}
 .custom-popover .popover-body .user-row .user-info .user-actions {
     align-self: center;
     margin-left: auto;
@@ -5622,8 +5627,367 @@ align-items: baseline;
 .custom-popover .popover-body .user-row .user-info .user-actions .follow-button a:hover {
     background-color: rgb(0 62 203);
 }
+.custom-popover .popover-body .tooltip-content {
+    padding: 20px 20px 0;
+}
+.custom-popover .popover-body {
+    padding: 5px 5px 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.custom-popover .popover-body .tooltip-content {
+    padding: 20px 20px 0;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-summary {
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 0 20px;
+    position: relative;
+    width: 100%;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-thumbnail {
+    border-radius: 3px;
+    display: grid;
+    grid-column-gap: 2px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    grid-template-columns: repeat(3, 1fr);
+    height: 87.604px;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-thumbnail .thumbnail {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: rgb(3, 10, 28);
+}
+
+.custom-popover .popover-body .miniprofile-content .user-thumbnail .thumbnail img {
+    position: relative;
+    width: 100%;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info {
+    padding: 0 12px;
+    text-align: center;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-avatar {
+    border: 2px solid #fff;
+    box-shadow: 0 1px 5px rgba(25, 25, 25, .15);
+    display: inline-block;
+    height: auto;
+    left: 0;
+    position: relative;
+    transform: translate(0, -50%);
+    width: auto;
+    z-index: 2;
+    border-radius: 50%;
+    overflow: hidden;
+    right: 0;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-avatar img {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-avatar .avatar-link {
+    backface-visibility: hidden;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    box-sizing: content-box !important;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: filter .2s linear;
+    height: 80px;
+    width: 80px;
+    min-height: 80px;
+    min-width: 80px;
+}
+.custom-popover .popover-body .miniprofile-content .user-info .user-avatar .avatar-link:hover {
+    filter: brightness(80%);
+}
+c {
+        margin-top: -40px;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-details .user-name-container {
+    font-size: 18px;
+    font-weight: 600;
+    height: 19px;
+    margin: 10px auto 6px;
+    width: 100%;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-details .user-name-container .user-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #191919;
+    display: inline-block;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-details .user-name-container .user-name span:hover {
+    text-decoration: underline;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-location {
+    color: #707070;
+    display: flex;
+    font-size: 14px;
+    height: 19px;
+    justify-content: center;
+    margin: 0 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: color .2s;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-info .user-location i {
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    transition: fill .2s;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    height: 22px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 100%;
+}
+.custom-popover .popover-body .miniprofile-content .user-summary .Availability {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    height: 22px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-summary .Availability .BadgesRow {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    height: 100%;
+    z-index: 1;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-summary .Availability .BadgesRow button {
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, .05);
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 8px;
+    border: 1px solid rgba(177, 37, 192, .1);
+    cursor: default;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-summary .Availability .BadgesRow .Badge-Freelance span {
+    color: #b125c0;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-summary .Availability .BadgesRow button span {
+    margin: 0;
+    max-width: 100px;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.custom-popover .popover-body .miniprofile-content .user-summary .Availability .BadgesRow .Badge-FullTime {
+    color: #0a7494;
+}
+
+.custom-popover .popover-body .miniprofile-content {}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons {
+    display: grid;
+    padding: 0 20px 0;
+    row-gap: 10px;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .StatsSummary {
+    align-items: center;
+    display: flex;
+    margin-top: -10px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .StatsSummary .Stat {
+    flex: 1 1 100%;
+    max-width: 33%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .StatsSummary .Stat::after {
+    background-color: #ccc;
+    content: "";
+    display: block;
+    height: calc(100% - 20px);
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+}
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .StatsSummary .Stat:last-child:after{
+    display:none;
+}
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .StatsSummary .Stat h4 {
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .StatsSummary .Stat h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: dimgray;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton a {
+    background-color: #0057ff;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-shadow: none;
+    transition-duration: 300ms;
+    transition-property: background, color, border;
+    transition-timing-function: linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: top;
+    height: 32px;
+    padding: 6px 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton a i {
+    margin-right: 7px;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton .Following,.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton .Unfollow {
+    display: none;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton .Following {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e8e8e8;
+    color: #191919;
+    font-size: 14px;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton .Unfollow {
+    background-color: #d00d00;
+    color: #fff;
+}
+
+.custom-popover .popover-body .miniprofile-content .MessageButton {
+    border: 1px solid rgb(0 87 255);
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 0.375rem;
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    padding: 0 20px;
+    position: relative;
+    text-wrap: nowrap;
+    transition: background-color 200ms ease-in-out, border-width 200ms ease-in-out, border-color 200ms ease-in-out;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: rgb(245 248 255);
+    border-color: rgb(222 232 255);
+    color: rgb(0 87 255);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.custom-popover .popover-body .miniprofile-content .MessageButton:hover {
+    background-color: rgb(222 232 255);
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton .Follow:hover {
+     background-color: rgb(0 62 203);
+}
+
+.custom-popover .popover-body .miniprofile-content .MessageButton i {
+    font-size: 18px;
+}
+
+.custom-popover .popover-body .miniprofile-content .ProfileButtons .FollowButton a i {
+    font-size: 16px;
+}
+.custom-popover .popover-body .miniprofile-content .user-info .user-details {
+    margin-top: -40px;
+}
 .custom-popover {
     max-width: 400px;
+    border: unset;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
 }
 .custom-popover .popover-body .user-row .user-info .user-actions .interaction-button {
     align-items: center;
