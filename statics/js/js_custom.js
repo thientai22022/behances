@@ -147,30 +147,33 @@ $(document).ready(function() {
           lastScrollTop = scrollTop; 
         });
     }
+ 
     let tooltipTimer = false;
     let isTooltipOpen = false;
     let tooltipDelay = 100;
+    let popoverTimer = false;
+    let isPopoverOpen = false;
+    let popoverDelay = 100;
 
     $(document).on('mouseover', '[data-bs-toggle=tooltip]', function(e) {
-    $('.tooltip').tooltip('hide');
-    
-    $(e.currentTarget).tooltip({
-        'trigger': 'manual',
-        'html': true
-    }).tooltip('show');
+        $('.tooltip').tooltip('hide');
+        
+        $(e.currentTarget).tooltip({
+            'trigger': 'manual',
+            'html': true
+        }).tooltip('show');
     });
 
     $(document).on('mouseleave', '[data-bs-toggle=tooltip]', function(e) {
         if (!isTooltipOpen) {
             tooltipTimer = setTimeout(function () { 
-            $(e.currentTarget).tooltip('hide'); 
+                $(e.currentTarget).tooltip('hide'); 
             }, tooltipDelay);
         }
     });
 
     $(document).on('mouseover', '.tooltip', function() {
         clearTooltipTimeout();
-        
         isTooltipOpen = true;
     });
 
@@ -178,17 +181,54 @@ $(document).ready(function() {
         tooltipTimer = setTimeout(function () { 
             $(e.currentTarget).tooltip('hide');     
         }, tooltipDelay);
-
         isTooltipOpen = false;
     });
 
-    function clearTooltipTimeout()
-    {
-        if (tooltipTimer) 
-        {                            
-            window.clearTimeout(tooltipTimer);
-                                        
+    // Popover Logic
+    $(document).on('mouseover', '[data-bs-toggle=popover]', function(e) {
+        $('.popover').popover('hide');
+        
+        $(e.currentTarget).popover({
+            'trigger': 'manual',
+            'html': true,
+            'customClass': 'custom-popover'
+        }).popover('show');
+    });
+
+    $(document).on('mouseleave', '[data-bs-toggle=popover]', function(e) {
+        if (!isPopoverOpen) {
+            popoverTimer = setTimeout(function () { 
+                $(e.currentTarget).popover('hide'); 
+            }, popoverDelay);
+        }
+    });
+
+    $(document).on('mouseover', '.popover', function() {
+        clearPopoverTimeout();
+        isPopoverOpen = true;
+    });
+
+    $(document).on('mouseleave', '.popover', function(e) {
+        popoverTimer = setTimeout(function () { 
+            $(e.currentTarget).popover('hide');     
+        }, popoverDelay);
+        isPopoverOpen = false;
+    });
+
+    // Clear Tooltip Timeout
+    function clearTooltipTimeout() {
+        if (tooltipTimer) {                            
+            window.clearTimeout(tooltipTimer);                                    
             tooltipTimer = false;
         }
     }
+
+    // Clear Popover Timeout
+    function clearPopoverTimeout() {
+        if (popoverTimer) {                            
+            window.clearTimeout(popoverTimer);                                    
+            popoverTimer = false;
+        }
+    }
+
 });
