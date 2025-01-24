@@ -5837,7 +5837,6 @@ c {
     color: #0a7494;
 }
 
-.custom-popover .popover-body .miniprofile-content {}
 
 .custom-popover .popover-body .miniprofile-content .ProfileButtons {
     display: grid;
@@ -6035,6 +6034,9 @@ background-color: rgb(222 232 255);
     }
 }
 @media (max-width: 767px) {
+    .custom-popover .popover-body {
+        width: 100%;
+    }
     .header_top,.slide-panel{
         display: none;
     }
