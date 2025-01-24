@@ -87,7 +87,8 @@
 }
 html {
     background: #fff;
-    color: #000
+    color: #000;
+    position: relative;
 }
 
 legend {
@@ -3620,7 +3621,7 @@ font-size: 16px;
         color: #191919;
     }
 
-#suggestions {
+.suggestions {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .15);
@@ -3628,6 +3629,7 @@ font-size: 16px;
     flex-direction: column;
     max-height: min(100vh - 100px, 80vh);
     opacity: 0;
+    visibility: hidden;
     overflow: hidden;
     position: absolute;
     will-change: transform;
@@ -3639,7 +3641,10 @@ font-size: 16px;
     border-top-right-radius: 15px;
     padding-bottom: 30px;
 }
-
+.suggestions.active {
+    opacity: 1 !important;
+    visibility: visible;
+}
 .suggestions-inner {
     flex-grow: 1;
     overflow: auto;
@@ -3886,10 +3891,7 @@ align-items: baseline;
     font-weight: bold;
     transform: translate(3px, -24px) scale(0.75);
 }
-.suggestions.active {
-    opacity: 1 !important;!i;!;
-    visibility: visible;
-}
+
 
 .suggestions-list .heading {
     color: dimgray;
@@ -4314,7 +4316,8 @@ align-items: baseline;
 .grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .cover-content .controls .add-to-moodboard .btn-inverted {
     border-radius: 100px;
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-weight: 600;
     line-height: 1;
     transition-duration: 300ms;
@@ -4483,6 +4486,24 @@ align-items: baseline;
     display: block;
     color: #191919;
 }
+.grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .owner-activator .owner-name .owner-link.owners-arrow::after {
+    border: 4px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 0;
+    border-top-color: #191919;
+}
+
+.grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .owner-activator .owner-name .owner-link.owners-arrow {
+    padding-right: 12px;
+}
+.grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .owner-activator .owner-name .owner-link.owners-arrow:hover{
+    text-decoration: underline !important;
+}
 .grid-item .item-wrapper .project-cover .project-cover-item .cover .cover-wrapper .project-details .project-info .owner .owner-profile .badge {
     flex-shrink: 0;
     line-height: 13px;
@@ -4612,7 +4633,8 @@ align-items: baseline;
 .signup-btn {
     border-radius: 100px;
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-weight: 600;
     line-height: 1;
     transition-duration: 300ms;
@@ -4886,7 +4908,7 @@ align-items: baseline;
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
     flex-flow: column nowrap;
     inset: -1000000px auto auto -1000000px;
-    position: absolute;
+    position: fixed;
     width: auto;
     z-index: 1004
 }
@@ -5169,6 +5191,8 @@ align-items: baseline;
     text-align: center;
     text-transform: uppercase;
     width: 34px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .app-links {
@@ -5390,6 +5414,19 @@ align-items: baseline;
 
 #footer-links li a:before, #footer-links li button:before,#footer-links li a:after, #footer-links li button:after {
     display: none;
+}
+.tooltip-inner {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 15px 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+.tooltip-inner a {
+    text-decoration: underline;
+    display: block;
 }
 @media (max-width: 1024px) {
     .blocker-ending-long,.footer_fixed {
