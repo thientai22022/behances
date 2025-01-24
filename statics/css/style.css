@@ -3051,6 +3051,7 @@ body:not(.project-editor):not(.vue-route) #top-panel {
     transition: background 300ms;
     padding-left: 24px;
     padding-right: 24px;
+    border-bottom: 1px solid #ececec;
 }
 
 
