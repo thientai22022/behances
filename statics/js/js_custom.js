@@ -73,12 +73,13 @@ $(document).ready(function() {
         });
     }
     
-    if ($('.language-selector').length) {
-        const $languageSelector = $(".language-selector");
-        const $popoverContent = $(".popover-content");
+    $("[data-popper-placement]").each(function () {
+        const $triggerElement = $(this); 
+        const placement = $triggerElement.attr("data-popper-placement"); 
+        const $popoverContent = $triggerElement.siblings(".popover-content"); 
 
-        const popperInstance = Popper.createPopper($languageSelector[0], $popoverContent[0], {
-            placement: "bottom",
+        const popperInstance = Popper.createPopper($triggerElement[0], $popoverContent[0], {
+            placement: placement,
             modifiers: [
                 {
                     name: "offset",
@@ -91,17 +92,18 @@ $(document).ready(function() {
 
         let isHovering = false;
 
-        $languageSelector.on("mouseenter", function () {
+        $triggerElement.on("mouseenter", function () {
             isHovering = true;
-            $popoverContent.removeAttr("hidden"); 
-            popperInstance.update(); 
+            $popoverContent.removeAttr("hidden");
+            popperInstance.update();
+        });
 
-        $languageSelector.on("mouseleave", function () {
+        $triggerElement.on("mouseleave", function () {
             setTimeout(function () {
                 if (!isHovering) {
-                    $popoverContent.attr("hidden", "true"); 
+                    $popoverContent.attr("hidden", "true");
                 }
-            }, 100); 
+            }, 100);
         });
 
         $popoverContent.on("mouseenter", function () {
@@ -115,10 +117,9 @@ $(document).ready(function() {
                 if (!isHovering) {
                     $popoverContent.attr("hidden", "true");
                 }
-            }, 100); 
+            }, 100);
         });
     });
-    }
     if ($('.footer_fixed').length) {
         const footer = $('.footer_fixed'); 
         const footerContainer = $('.footer-container'); 
@@ -126,7 +127,8 @@ $(document).ready(function() {
       
         $(window).scroll(function() {
           const scrollTop = $(this).scrollTop(); 
-          const footerOffset = footerContainer.offset().top-1000; 
+          const footerHeight = footerContainer.outerHeight(); 
+          const footerOffset = footerContainer.offset().top - footerHeight; 
       
           if (scrollTop >= footerOffset) {
             if (scrollTop > lastScrollTop) {

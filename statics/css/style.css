@@ -3629,7 +3629,6 @@ font-size: 16px;
     max-height: min(100vh - 100px, 80vh);
     opacity: 0;
     overflow: hidden;
-    pointer-events: none;
     position: absolute;
     will-change: transform;
     transition: opacity .15s linear;
@@ -3920,6 +3919,7 @@ align-items: baseline;
     box-sizing: border-box;
     color: inherit;
     display: block;
+    text-decoration: none;
     padding: 5px var(--result-padding-x, 5px);
 }
 .suggestions-list li ul li.suggestion:hover, .suggestions-list li ul li.suggestion:focus-within {
@@ -4187,6 +4187,7 @@ align-items: baseline;
     margin-bottom: 50px;
 }
 .grid-item {
+    position: relative;
     margin-bottom: 50px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -4292,7 +4293,7 @@ align-items: baseline;
     left: 0;
     right: 0;
     top: 0;
-    z-index: 4;
+    /* z-index: 4; */
     width: 100%;
     height: 100%;
 }
@@ -4306,7 +4307,7 @@ align-items: baseline;
     max-width: 50%;
     opacity: 0;
     top: 10px;
-    z-index: 4;
+    /* z-index: 4; */
     position: relative;
 }
 
@@ -4564,7 +4565,6 @@ align-items: baseline;
     padding: 30px;
     top: initial;
     transform: initial;
-    z-index: 7;
     border-radius: 0;
     box-shadow: none;
     cursor: default;
@@ -5263,7 +5263,7 @@ align-items: baseline;
     bottom: 0;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 9999;
 }
 
 .footer_fixed .footer-inner {
@@ -5368,6 +5368,28 @@ align-items: baseline;
 .footer_fixed .footer-inner .footer-links .btn-cookie:hover,.footer_fixed .footer-inner a:hover,.footer_fixed .footer-inner button:hover {
     color: rgb(0 87 255);
     text-decoration: none;
+}
+
+#footer-links li {
+    margin: 0;
+    padding: 0;
+}
+
+#footer-links li a,#footer-links li button {
+    display: block;
+    padding: 6px 20px;
+    width: 100%;
+    line-height: 1.3;
+    text-align: left;
+}
+
+#footer-links {
+    padding: 15px 0;
+    width: 195px;
+}
+
+#footer-links li a:before, #footer-links li button:before,#footer-links li a:after, #footer-links li button:after {
+    display: none;
 }
 @media (max-width: 1024px) {
     .blocker-ending-long,.footer_fixed {
