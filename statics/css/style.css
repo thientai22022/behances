@@ -3064,7 +3064,22 @@ body:not(.project-editor):not(.vue-route) #top-panel {
 .header_top_nav > li:not(:last-child) {
     margin-right: 24px;
 }
-
+.header_top_nav > li:last-child:before {
+    content: "";
+    border-right: 1px solid #e8e8e8;
+    height: 20px;
+    margin-top: 18px;
+    width: 1px;
+    position: absolute;
+    left: -24px;
+}
+.header_top_nav > li.active > a:after {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+.header_top_nav > li:last-child {
+    margin-left: 24px;
+}
 .header_top_nav li {
     position: relative;
 }
@@ -3109,6 +3124,7 @@ display: none;
 }
 .header_top_nav > li:hover > a:after{
     opacity:1;
+    transform: unset;
 }
 .header_top_nav li.panel > a > svg {
     fill: rgb(112 112 112);
