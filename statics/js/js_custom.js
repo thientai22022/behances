@@ -20,10 +20,12 @@ $(document).ready(function() {
     if ($('.search-input').length) {
         $('.search-input').on('click', function() {
             $('#suggestions').addClass('active');
+            $('.overlay').addClass('active');
         });
         $(document).on('click', function(event) {
             if (!$(event.target).closest('.search-input').length && !$(event.target).closest('#suggestions').length) {
                 $('#suggestions').removeClass('active');
+                $('.overlay').removeClass('active');
             }
         });
     }
