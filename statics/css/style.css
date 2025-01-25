@@ -7885,6 +7885,12 @@ fill: rgb(25 25 25);
 }
 
 @media (max-width: 1024px) {
+    .header_top_mb{
+        display: block;
+    }
+    .header_top{
+        display: none;
+    }
     .blocker-ending-long,.footer_fixed {
         display: none;
     }
