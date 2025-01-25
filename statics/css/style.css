@@ -6718,7 +6718,7 @@ background-color: rgb(222 232 255);
     color: rgb(112 112 112);
 }
 
-.profile-wrap  .profile-header .user-details-container .user-details .user-info,.profile-wrap  .profile-header  .user-details-container .user-details  .user-location {
+.profile-wrap  .profile-header .user-details-container .user-details .user-info,.profile-wrap  .profile-header  .user-details-container .user-details  .user-location a{
     align-items: center;
     color: rgb(25 25 25);
     display: flex;
@@ -6728,8 +6728,10 @@ background-color: rgb(222 232 255);
     line-height: 1.4;
     margin: 0;
 }
-
-.profile-wrap  .profile-header .user-details-container .user-details .user-info svg,.profile-wrap .profile-header .user-details-container .user-details .user-location  svg {
+.profile-wrap  .profile-header  .user-details-container .user-details  .user-location{
+    margin: 0;
+}
+.profile-wrap  .profile-header .user-details-container .user-details .user-info svg,.profile-wrap .profile-header .user-details-container .user-details .user-location svg {
     height: 14px;
     margin: var(--creator-pro-margin);
     min-width: 14px;
@@ -6739,7 +6741,27 @@ background-color: rgb(222 232 255);
     --creator-pro-margin: auto var(--be-sp-2) auto 0;
     --be-sp-2: 0.5rem;
 }
+.profile-wrap .profile-header .user-details-container .user-details .user-info-website svg {
+    height: 14px;
+    margin: var(--creator-pro-margin);
+    min-width: 14px;
+    transform: translate(0, 1px);
+    width: 14px;
+    stroke: rgb(112 112 112);
+    --creator-pro-margin: auto var(--be-sp-2) auto 0;
+    --be-sp-2: 0.5rem;
+}
 
+.profile-wrap .profile-header .user-details-container .user-details .user-info-website {
+    align-items: center;
+    color: rgb(25 25 25);
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
 .profile-wrap .profile-header  .user-details-container .user-details .user-info a {
     text-decoration: underline;
 }
@@ -7907,7 +7929,7 @@ fill: rgb(25 25 25);
     .profile-wrap .profile-card{
         margin-bottom: 28px;
     }
-    .profile-wrap .profile-header .user-details-container .user-details .user-info, .profile-wrap .profile-header .user-details-container .user-details .user-location {
+    .profile-wrap .profile-header .user-details-container .user-details .user-info, .profile-wrap .profile-header .user-details-container .user-details .user-location a,.profile-wrap .profile-header .user-details-container .user-details .user-info-website{
         justify-content: center;
         width: auto;
     }
