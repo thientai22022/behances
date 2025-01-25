@@ -7763,6 +7763,9 @@ fill: rgb(25 25 25);
     grid-row-gap: 20px;
     width: 100%;
 }
+.ContentGrid .project-cover .cover .cover-wrapper .cover-content .dominant-color {
+    background-color: rgb(229, 221, 200);
+}
 @media (min-width: 604px) and (max-width: 1038px) {
     .profile-wrap {
         max-width: 888px;
