@@ -7759,7 +7759,10 @@ fill: rgb(25 25 25);
     z-index: 3;
     cursor: pointer;
 }
-
+.project-cover .cover .cover-overlay .project-details .project-info .owners .miniprofile-activator-container .miniprofile .popover-activator .miniprofile-activator .owner {
+    font-size: 13px;
+    font-weight: 400;
+}
 .project-cover .cover .cover-overlay .project-details .project-info .owners .miniprofile-activator-container .miniprofile .popover-activator .miniprofile-activator {
     align-items: center;
     display: flex;
@@ -7787,6 +7790,54 @@ fill: rgb(25 25 25);
 .ContentGrid .project-cover .cover .cover-wrapper .cover-content .dominant-color {
     background-color: rgb(229, 221, 200);
 }
+.projectInfo-projectFooter {
+    background-color: #fafafa;
+    border-radius: 0 0 3px 3px;
+    display: inline-block;
+    padding: 90px 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.projectInfo-projectFooter .projectInfo-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+.ProjectComments-projectComment {
+    backface-visibility: hidden;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 27px 30px;
+    text-align: left;
+    width: calc(100% - 405px);
+}
+.projectCommentInput {
+    border-bottom: 1px solid #e8e8e8;
+    margin: 0 -30px;
+    padding: 0 30px 27px;
+}
+
+.projectCommentInput .SignUpPrompt-header {
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.projectCommentInput .SignUpPrompt-subHeader {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+
 @media (min-width: 1201px) and (max-width: 1488px) {
     .profile-wrap {
         max-width: 1338px;
@@ -7883,7 +7934,2651 @@ fill: rgb(25 25 25);
         padding: 25px 30px 16px;
     }
 }
+.project_details {
+    margin-top: 83px;
+    pointer-events: none;
+        padding-bottom: 70px;
+    position: relative;
+}
+@media (min-width: 1025px) {
+   .project_details {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+        width: calc(100% - 400px);
+        top: 0;
+    }
+       .project_details_wrapper .sidebar {
+        display: block;
+        float: right;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+       .project_details_wrapper .sidebar .user-actions {
+        margin-right: -50px;
+        position: sticky;
+        top: 143px;
+        transform: translateX(20px);
+        transition: opacity .15s linear;
+        will-change: opacity;
+        width: 45px;
+    }
+    .project_details_wrapper .sidebar .user-actions .avatar{
+        margin-bottom:6px;
+    }
+}
 
+.project_details_wrapper {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar {
+    position: relative;
+    pointer-events: all;
+    display: inline-block;
+}
+
+.project_details_wrapper .sidebar {
+    z-index: 3;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .avatar-link {
+    height: 45px;
+    width: 45px;
+    min-height: 45px;
+    min-width: 45px;
+    backface-visibility: hidden;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    box-sizing: content-box !important;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: filter .2s linear;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .avatar-link img {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.project_details_wrapper .sidebar .user-actions .follow-status {
+    cursor: pointer;
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    pointer-events: all;
+    text-align: center;
+    color: dimgray;
+    margin-top: 13px;
+}
+
+.project_details_wrapper .sidebar .user-actions .follow-status span {
+    cursor: pointer;
+    display: block;
+}
+
+.project_details_wrapper .sidebar .user-actions .follow-status .following-title {
+    display: none;
+}
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button {
+    bottom: 3px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    display: block;
+    padding-bottom: 2px;
+    margin-bottom: -6px;
+    cursor: pointer;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button a {
+    align-items: center;
+    background: #0057ff;
+    border-radius: 50%;
+    display: flex;
+    height: 16px;
+    justify-content: center;
+    width: 16px;
+    font-size: 0;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button .follow svg {
+    fill: #fff;
+    height: 8px;
+    width: 8px;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button .following {
+    background: #fff;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button .unfollow {
+    background: #d00d00;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button .unfollow svg {
+    display: block;
+    fill: #fff;
+    margin: 0 auto;
+    position: relative;
+    width: 8px;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button .following svg {
+    display: block;
+    fill: #191919;
+    height: 6.22px;
+    margin: 0 auto;
+    position: relative;
+    width: 8px;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .follow-button .following, .project_details_wrapper .sidebar .user-actions .avatar .follow-button .unfollow {
+    display: none;
+}
+
+.project_details_wrapper .sidebar .user-actions .action-name {
+    cursor: pointer;
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    pointer-events: all;
+    text-align: center;
+    color: dimgray;
+    margin-top: 13px;
+}
+.project-followTitle{
+display: block;
+cursor: pointer;
+}
+.project-followingTitle{
+    display: none;
+    cursor: pointer;
+}
+.project_details_wrapper .sidebar .user-actions .action-name span.active{
+    display: block;
+}
+.message-button {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.message-button button {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.message-button button svg {
+    fill: #191919;
+    height: 17px;
+    margin: auto;
+    width: 17px;
+}
+.message-button .actionName {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13px;
+    margin-left: -2.5px;
+    text-align: center;
+    white-space: normal;
+    width: 50px;
+    word-break: break-word;
+    margin-top: 8px;
+    pointer-events: all;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    color: dimgray;
+}
+.message-button .actionName {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13px;
+    margin-left: -2.5px;
+    text-align: center;
+    white-space: normal;
+    width: 50px;
+    word-break: break-word;
+    margin-top: 8px;
+    pointer-events: all;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    color: dimgray;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools {
+    pointer-events: all;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: -6px;
+    padding-bottom: 6px;
+    position: relative;
+    flex-flow: column;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .Tooltip-trigger > .tool-link {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    width: 45px;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .Tooltip-trigger > .tool-link img {
+    height: 50%;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools span {
+    cursor: pointer;
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    pointer-events: all;
+    text-align: center;
+    color: dimgray;
+}
+
+.project_details_wrapper .sidebar .user-actions .save {
+    pointer-events: all;
+    position: relative;
+}
+.project_details_wrapper .sidebar .user-actions .share svg {
+    fill: #191919;
+    height: 17px;
+    width: 17px;
+}
+
+.project_details_wrapper .sidebar .user-actions .save button,.project_details_wrapper .sidebar .user-actions .appreciate button,.project_details_wrapper .sidebar .user-actions .share button {
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #e8e8e8;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        height: 45px;
+        margin-left: 0;
+        width: 45px;
+}
+.project_details_wrapper .sidebar .user-actions .save span,.project_details_wrapper .sidebar .user-actions .share span,.project_details_wrapper .sidebar .user-actions .appreciate span{
+    cursor: pointer;
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    pointer-events: all;
+    text-align: center;
+    color: dimgray;
+}
+.project_details_wrapper .sidebar .user-actions .appreciate button {
+    align-items: center;
+    background: #0057ff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-color: #0057ff;
+}
+
+.project_details_wrapper .sidebar .user-actions .appreciate button svg {
+    height: 15px;
+    width: 16px;
+    fill: #fff;
+    margin: -2px 0 0 3px;
+}
+.project_details_wrapper .sidebar .user-actions .appreciate button:hover{
+background: #0046cc;
+}
+.project_details_wrapper .sidebar .user-actions .save button:hover,.project_details_wrapper .sidebar .user-actions .tools .tool-link:hover,.project_details_wrapper .sidebar .user-actions .share button:hover,.message-button button:hover{
+    background-color: #f1f1f1;
+}
+.Product_details{
+    background: #f9f9f9;
+}
+.project_details_wrapper .tooltip-container {
+    background-color: #fff;
+    color: #191919;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+    border-radius: 6px;
+    will-change: transform;
+    z-index: 100;
+    right: calc(100% + 7px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -3px;
+    cursor: initial;
+    padding: 10px 19px;
+    display: none;
+}
+
+.project_details_wrapper .tooltip-container .tooltip-triangle-container {
+    top: 35%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.project_details_wrapper .tooltip-container .tooltip-content {
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.project_details_wrapper .Tooltip-wrapper:hover .tooltip-container {
+    display: block;
+}
+
+.project_details_wrapper .Tooltip-wrapper {
+    position: relative;
+}
+
+.project_details_wrapper .tooltip-triangle-container .tooltip-triangle {
+    transform: rotate(-90deg);
+    border-color: transparent;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-top-color: #fff;
+}
+
+.project_details_wrapper .tooltip-triangle-container .tooltip-mask {
+    display: none;
+}
+.project_details_wrapper .Tooltip-trigger {
+    position: relative;
+    z-index: 2;
+}
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container {
+    min-width: 310px;
+    right: 120%;
+    top: 22.5px;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper {
+    align-items: flex-start;
+    color: #191919;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 100%;
+    padding: 10px 10px 0px;
+    text-align: left;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item svg {
+    margin-bottom: auto;
+    vertical-align: middle;
+    width: 22px;
+    fill: gray;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item .tooltip-list-item-text {
+    flex: 1 0 24px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item .tooltip-list-item-text::after {
+    border-style: solid;
+    border-width: 5px;
+    content: " ";
+    position: absolute;
+        left: 100%;
+    margin-top: -5px;
+    top: 50%;
+        border-color: transparent transparent transparent #fff;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid dimgray;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top .tooltip-list-item-text-container {
+    flex: 1;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top .tooltip-list-item-text-container .tooltip-list-item-subtext {
+    color: #707070;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top .tooltip-list-item-text-container .tooltip-list-item-text {
+    color: #191919;
+}
+
+.project_details_wrapper .message-button .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top svg {
+    fill: #191919;
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-container {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -3px;
+    padding: 20px;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-container .tooltip-triangle-container {
+    margin-top: -6px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tooltip-content {}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content {
+    width: 260px;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tooltip-title {
+    color: #959595;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list {
+    margin-top: 19px;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-with-text {
+    padding-top: 16px;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-with-text li {
+    display: inline;
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-with-text li:not(:last-child)::after {
+    content: ", ";
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-with-text li a {
+    color: #191919;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item:not(:first-child) {
+    margin-top: 6px;
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item a {
+    background-color: #959595;
+    color: #fff;
+    display: block;
+    position: relative;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item a::before {
+    border: 1px solid #0057ff;
+    border-radius: 14px;
+    bottom: -4px;
+    content: "";
+    left: -4px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    transform: scale(0.8);
+    transition: opacity .15s ease, transform .15s ease;
+    z-index: 0;
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item:not(:first-child) {
+    margin-top: 6px;
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item:nth-child(1) a {
+    background-color: #00005B;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item:nth-child(2) a {
+    background-color: #00005B;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item:nth-child(3) a{
+    background-color: #001E36;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item .tool-background {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    mix-blend-mode: luminosity;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item .tool-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    min-height: 47px;
+    padding: 10px 30px 12px;
+    position: relative;
+    transition: background-color .15s linear;
+    align-items: center;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item .tool-overlay .tool-icon {
+    height: 25px;
+    margin-right: 5px;
+    width: 25px;
+}
+
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item .tool-overlay .tool-label {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-top: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.project_details_wrapper .sidebar .user-actions .tools .tooltip-content .tools-list .tool-item:hover .tool-overlay {
+    background-color: rgba(0, 0, 0, .6);
+}
+.project_details_wrapper .sidebar .user-actions .avatar .tooltip-container {
+    top: calc(100% + 28px);
+    right: 0px;
+}
+.project_details_wrapper .sidebar .user-actions .avatar .tooltip-container .follow-tooltip label{
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.project_details_wrapper .sidebar .user-actions .avatar .tooltip-container .unfollowTooltip {
+    display: none;
+ 
+}
+.project_details_wrapper .sidebar .user-actions .avatar .tooltip-container .tooltip-triangle-container {
+    top: -12px;
+    transform: initial;
+    right: 16px;
+}
+
+.project_details_wrapper .sidebar .user-actions .avatar .tooltip-container .tooltip-triangle-container .tooltip-triangle {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-bottom-color: #fff;
+    transform: initial;
+}
+.project_details_wrapper .sidebar .user-actions .avatar .avatar-link:hover {
+    filter: brightness(80%);
+}
+.custom-popover[data-popper-placement^=left] .popover-arrow {
+    left: calc(100% - 15px);
+    height: 20px;
+    width: 20px;
+}
+
+.custom-popover[data-popper-placement^=left] .popover-arrow:before {
+    display: none;
+}
+
+.custom-popover[data-popper-placement^=left] .popover-arrow:after {
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    width: 14px;
+}
+.custom-popover[data-popper-placement^=bottom] .popover-arrow {
+   top: -5px;
+    height: 20px;
+    width: 20px;
+}
+
+.custom-popover[data-popper-placement^=bottom] .popover-arrow:before {
+    display: none;
+}
+
+.custom-popover[data-popper-placement^=bottom] .popover-arrow:after {
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    width: 14px;
+}
+.project_details_main{
+    cursor: default;
+    width: 100%;
+}
+.project_details_main .project-top-element {
+    background: #fff;
+      box-sizing: border-box;
+      color: #191919;
+      display: flex;
+      height: 83px;
+      padding: 20px;
+      position: absolute;
+      top: -83px;
+      width: 100%;
+  }
+  @media (min-width: 1025px) {
+     .project_details_main .project-top-element {
+          background: transparent;
+          padding: 20px 0;
+      }
+  }
+  
+  .project_details_main .project-top-element .avatar-container {
+      position: relative;
+  }
+  
+  .project_details_main .project-top-element .avatar-container .avatar {
+      align-items: center;
+      display: flex;
+  }
+  
+  .project_details_main .project-top-element .avatar-container .avatar .avatar-link {
+      backface-visibility: hidden;
+      background-color: #e8e8e8;
+      border-radius: 50%;
+      box-sizing: content-box !important;
+      display: block;
+      line-height: 0;
+      overflow: hidden;
+      position: relative;
+      transition: filter .2s linear;
+      height: 40px;
+      width: 40px;
+      min-height: 40px;
+      min-width: 40px;
+  }
+  
+  .project_details_main .project-top-element .avatar-container .avatar .avatar-link img {
+      border-radius: 50%;
+      display: block;
+      height: 100%;
+      width: 100%;
+      aspect-ratio: 1;
+  }
+  
+  .project_details_main .project-top-element .project-caption {
+      flex-grow: 1;
+      margin: -2px 0 0 10px;
+      max-width: calc(100% - 235px - 40px);
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-title-row {
+      align-items: center;
+      -moz-column-gap: 8px;
+      column-gap: 8px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-title-row h1 {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: inherit;
+      margin: 0;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-owner-items {
+      display: flex;
+      font-size: 14px;
+      white-space: nowrap;
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-owner-items .project-owner-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: inherit;
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-owner-items .project-separator {
+      margin: -1px 10px 0;
+      display: inline;
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-owner-items .follow-button-container {
+      display: inline;
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-owner-items .follow-button-container a {
+      font-size: 14px;
+  }
+  
+  .project_details_main .project-top-element .project-caption .project-owner-items .follow-button-container .following-button,.project_details_main .project-top-element .project-caption .project-owner-items .follow-button-container  .unfollow-button {
+      display: none;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container {
+      margin-left: auto;
+      max-width: 235px;
+      position: relative;
+      top: -28px;
+      transition: top .15s ease;
+      image-rendering: pixelated;
+  }
+  @media (min-width: 1025px) {
+     .project_details_main .project-top-element .project-feature-container {
+          display: inline-flex;
+          right: 0;
+      }
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container {
+      margin-left: 10px;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper {
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: -6px;
+      padding-bottom: 6px;
+      cursor: pointer;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper .feature-ribbon {
+      height: 57px;
+      overflow: hidden;
+      width: auto;
+      display: inline-block;
+      margin: 0;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper .tooltip-container {
+      cursor: initial;
+      padding: 10px;
+      top: calc(100% + 45px);
+      right: auto;
+      margin: 0;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper .tooltip-container .feature-header {
+      padding: 5px 7px;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: bold;
+      color: dimgray;
+      line-height: 2;
+      text-transform: uppercase;
+      white-space: nowrap;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper .tooltip-container .feature-info {
+      color: dimgray;
+      white-space: nowrap;
+      width: 100%;
+      padding: 0 7px 5px;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper .tooltip-container .feature-info a {
+      display: inline-block;
+      font-weight: bold;
+      padding-bottom: 0;
+      vertical-align: bottom;
+      color: rgb(0 87 255);
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper .tooltip-container .tooltip-triangle {
+      border-color: transparent;
+      border-style: solid;
+      border-width: 7px;
+      height: 0;
+      position: absolute;
+      width: 0;
+      border-bottom-color: #fff;
+      transform: initial;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container .feature-ribbon-container .tooltip-wrapper .tooltip-container .tooltip-triangle-container {
+      top: -12px;
+      transform: initial;
+      right: 54%;
+  }
+  
+  .project_details_main .project-top-element .project-feature-container:hover {top: -20px;}
+  #project-content {
+    padding-top: 0px;
+    background-color: #161619;
+    border-radius: 0;
+}
+#project-content .project-module {
+    padding-bottom: 0px;
+}
+@media (min-width: 1025px) {
+   #project-content {
+        border-radius: 3px 3px 0 0;
+    }
+}
+.project-content-wrap {
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .16);
+}
+
+.module-container {
+    position: relative;
+}
+
+.project-module {
+    padding: 0 7.1%;
+}
+
+.project-module-image {
+    text-align: center;
+}
+
+.image {
+    position: relative;
+}
+.project-module.image-full, .project-module.embed-full {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.project-module-image-inner-wrap {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.project-module__actions {
+    align-items: start;
+    cursor: default;
+    display: flex;
+    left: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    width: calc(100% - 20px);
+    z-index: 3;
+}
+
+.project-module__actions-container {
+    display: none;
+}
+.project-module:hover .project-module__actions-container, .project-module:focus-within .project-module__actions-container {
+    display: flex;
+}
+.project-module__actions-container>* {
+    margin-bottom: 10px;
+}
+
+
+.project-module__actions-container .project-module__action {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.project-module__actions-container .project-module__action button,.project-module__actions-container .project-module__action a {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.project-module__actions-container .project-module__action button.btn-inverted {
+    background: rgba(25, 25, 25, .65);
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.project-module__actions-container .project-module__action .btn-inverted .btn-label-wrapper {
+    padding: 8px 18px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.project-module__actions-container .project-module__action .btn-inverted .btn-label-wrapper .btn-icon {
+    float: left;
+}
+
+.project-module__actions-container .project-module__action .btn-inverted .btn-label-wrapper span {
+    font-size: 14px;
+    border: 1px solid transparent;
+    display: inline-block;
+    max-width: 100%;
+    display: none;
+}
+
+.project-module__actions-container .project-module__action button.btn-inverted .btn-label-wrapper .btn-icon svg {
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+}
+
+.project-module__actions-container .project-module__action a {
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.project-module__actions-container .project-module__action a .btn-icon svg {
+    height: 15px;
+    width: 15px;
+}
+
+#project-content .image-element{
+    display: block;
+    height: auto;
+    position: relative;
+    cursor: zoom-in;
+}
+
+#project-content .image-element img {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    max-height: 100%;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: auto;
+    z-index: inherit;
+}
+.spacer {
+    height: 3px;
+}
+
+.spacer, .module-separator {
+    padding-left: 7.1%;
+    padding-right: 7.1%;
+}
+#project-modules .spacer  .divider {
+    display: block;
+}
+.embed-dimensions {
+    max-width: 1200px;
+    max-height: 674px;
+    margin: 0 auto;
+    transition: all .09s linear;
+}
+
+.embed-dimensions .embed-aspect-ratio {
+    padding-bottom: 56.17%;
+    position: relative;
+    height: 0px;
+}
+
+.embed-dimensions .embed-aspect-ratio iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-module-video {
+    margin-bottom: 31px;
+}
+.grid--main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -2px -4px;
+    visibility: visible;
+}
+.project-module-container .project-module-image-full.grid--main {
+    max-width: none;
+    padding: 0;
+}
+
+.grid__item-container {
+    display: inline-block;
+    margin: 0 2px 4px;
+    position: relative;
+    overflow: hidden;
+    width: 462.222px;
+    flex-grow: 462.222;
+}
+
+.grid__item-container .grid__item-image {
+    position: absolute;
+    top: 0;
+    vertical-align: bottom;
+    width: 100%;
+    cursor: zoom-in;
+}
+
+.grid__item-container .grid__item-filler {
+    cursor: zoom-in;
+    display: block;
+}
+.grid--main .project-module__action {
+    align-items: center;
+    cursor: default;
+    display: none;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+}
+
+.grid--main .project-module__action .btn-inverted {
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: rgba(25, 25, 25, .65);
+    border: 1px solid transparent;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    white-space: nowrap;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.grid--main .project-module__action .btn-inverted .btn-label-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 18px;
+}
+
+.grid--main .project-module__action .btn-inverted .btn-label-wrapper .btn-icon {
+    margin-right: 7px;
+    float: left;
+}
+
+.grid--main .project-module__action .btn-inverted .btn-label-wrapper .btn-icon svg {
+    height: 15px;
+    fill: #fff;
+}
+
+.grid--main .project-module__action .btn-inverted .btn-label-wrapper span {
+    border: 1px solid transparent;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.grid__item-container:hover .project-module__action  {
+    display:block;
+}
+.lightbox-modal {
+    align-items: center;
+    background: rgba(0, 0, 0, .9);
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.lightbox-modal .lightbox-content {
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(25, 25, 25, .2);
+    box-sizing: border-box;
+    max-height: 100vh;
+    min-width: 600px;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    background: none;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions {
+    position: relative;
+    z-index: 2;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-main-image {
+    left: 50%;
+    position: relative;
+    top: 2px;
+    transform: translate(-50%);
+    max-height: 100vh;
+    max-width: calc(100vw - 75px* 2);
+    min-height: 30px;
+    opacity: 1;
+    transition: opacity var(--transition-time) ease;
+    cursor: zoom-in;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions {
+    z-index: 9;
+    margin-left: 15px;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .btn-save {
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: rgba(25, 25, 25, .65);
+    border: 1px solid transparent;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    white-space: nowrap;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 8px 18px;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .btn-save svg {
+    height: 15px;
+    fill: #fff;
+    margin-right: 7px;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-close {
+    background-color: #343434;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-image: unset;
+    z-index: 4;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    outline: none;
+    box-shadow: unset;
+    border: none;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-close svg {
+    fill: #fff;
+    height: 10px;
+    position: relative;
+    width: 10px;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper:hover .lightbox-close {
+    opacity: 1;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper:hover .lightbox-content-actions .lightbox-image-actions {
+    opacity: 1;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-pagination button {
+    align-items: center;
+    bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-pagination .btn-prev {
+    left: 0;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-pagination .btn-next {
+    right: 0;
+}
+.lightbox-modal .lightbox-caption {left: 20px;margin-left: 15px;opacity: 0;position: fixed;top: 20px;transition: opacity 1s;z-index: 9;}
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper:hover .lightbox-caption {
+    opacity: 1;
+}
+.lightbox-modal .lightbox-caption .lightbox-caption-box{
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0), #000);
+    border-radius: 2px;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1004;
+}
+.lightbox-modal .lightbox-caption .project-link .project-thumbnail {
+    border-radius: 2px;
+    display: block;
+    margin-right: 10px;
+    width: 80px;
+}
+
+.lightbox-modal .lightbox-caption .project-info {
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+.lightbox-modal .lightbox-caption .project-info .project-name {
+    color: inherit;
+    font-weight: bold;
+    text-align: left;
+}
+
+.lightbox-modal .lightbox-caption .project-info .project-owners {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 9px;
+}
+
+.lightbox-modal .lightbox-caption .project-info .project-owners .project-owner {
+    color: #fff;
+}
+.lightbox-modal .lightbox-caption .project-info .project-owners .follow-button {
+    display: flex;
+}
+.lightbox-modal .lightbox-caption .project-info .project-owners .follow-button::before {
+    content: "•";
+    display: inline-block;
+    margin: 0 10px;
+}
+.lightbox-modal .lightbox-caption .project-info .project-owners .follow-button a {
+    border: none;
+    font-weight: normal;
+    padding: 0;
+}
+
+.lightbox-modal .lightbox-caption .project-info .project-owners .follow-button .following-btn, .lightbox-modal .lightbox-caption .project-info .project-owners .follow-button .unfollow-btn {
+    display: none;
+}
+.lightbox-pagination-container {
+    align-items: center;
+    bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.lightbox-pagination-container.previous {
+    left: 0;
+}
+
+.lightbox-pagination-container.next {
+    right: 0;
+}
+
+.lightbox-pagination-container .pagination-button-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.lightbox-pagination-container.previous .pagination-button-wrapper {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.lightbox-pagination-container.next .pagination-button-wrapper {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.lightbox-pagination-container .pagination-button-wrapper .btn-inverted {
+    background-color: #343434;
+    height: 45px;
+    margin-bottom: 3px;
+    pointer-events: initial;
+    width: 45px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.lightbox-pagination-container .pagination-button-wrapper .btn-inverted .btn-label-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.lightbox-pagination-container .pagination-button-wrapper .btn-inverted .btn-label-wrapper .btn-label {
+    border: 1px solid transparent;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.lightbox-pagination-container .pagination-button-wrapper .btn-inverted .btn-label-wrapper .btn-label svg {
+    fill: #fff;
+    height: 13px;
+    margin-top: 1px;
+    vertical-align: top;
+    width: 15px;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-pagination-container.next:hover {
+    opacity: 1;
+}
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-pagination-container.previous:hover {
+    opacity: 1;
+}
+.lightbox-pagination-container.next svg {
+    margin-left: 1px;
+    transform: rotate(180deg);
+}
+section.project-module-container .image-inner-wrap {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+section.project-module-container .image-inner-wrap .actions-container {
+    display: none;
+}
+
+section.project-module-container .image-inner-wrap .actions-container>* {
+    margin-bottom: 10px;
+}
+
+section.project-module-container .image-inner-wrap .actions-container .btn-inverted {
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: rgba(25, 25, 25, .65);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid transparent;
+    color: #fff;
+}
+section.project-module-container .image-inner-wrap .actions-container .similar-images-button-container .btn-inverted .btn-label-wrapper .btn-label {
+    display: block;
+}
+
+section.project-module-container .image-inner-wrap .actions-container .similar-images-button-container .btn-inverted .btn-label-wrapper .btn-icon {
+    margin-right: 7px;
+}
+section.project-module-container .image-inner-wrap .actions-container .action {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    white-space: nowrap;
+}
+
+section.project-module-container .image-inner-wrap .actions-container .btn-inverted svg {
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+}
+section.project-module-container .image-inner-wrap:hover .project-module__actions .actions-container{
+    display:flex;
+ }
+section.project-module-container .image-inner-wrap .actions-container .btn-inverted .btn-label-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 18px;
+}
+
+section.project-module-container .image-inner-wrap .actions-container .btn-inverted .btn-label-wrapper .btn-label {
+    display: none;
+}
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .action-container,.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container {
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container .btn-inverted {
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: rgba(25, 25, 25, .65);
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container .btn-label-wrapper {
+    padding: 8px 18px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container .btn-label-wrapper .btn-icon {
+    margin-right: 7px;
+    float: left;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container .btn-label-wrapper .btn-icon svg {
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .action-container .btn-inverted {
+    border-radius: 100px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: rgba(25, 25, 25, .65);
+    border: 1px solid transparent;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .action-container .btn-inverted .btn-label-wrapper {
+    padding: 8px 18px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .action-container .btn-inverted .btn-label-wrapper .btn-icon {
+    float: left;
+    margin-right: 7px;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .action-container .btn-inverted .btn-label-wrapper .btn-icon svg {
+    height: 15px;
+    width: 15px;
+}
+
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container {
+    margin-right: 10px;
+}
+.lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .action-container, .lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container {
+    display: none;
+}
+.lightbox-modal.custom-class .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .action-container, .lightbox-modal.custom-class .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions .similar-images-button-container {
+    display: inline-flex;
+}
+.appreciateBottomContainer {
+    display: none;
+}
+@media (min-width: 1025px) {
+    .appreciateBottomContainer {
+        background-color: #000;
+        color: #fff;
+        display: block;
+        padding: 50px 0;
+        text-align: center;
+    }
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipTrigger {
+    position: relative;
+    z-index: 2;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipTrigger .appreciateIcon {
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: #3c3c3c;
+    color: #fff;
+    flex-direction: column;
+    height: 75px;
+    margin: 0 auto;
+    width: 75px;
+}
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipTrigger .appreciateIcon:hover {
+    background: #232323;
+    text-decoration: none;
+}
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipTrigger .appreciateIcon svg {
+    height: 26px;
+    width: 25px;
+    fill: #fff;
+    margin: -2px 0 0 3px;
+}
+.Appreciate-count {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer {
+    background-color: #fff;
+    border-radius: 3px;
+    color: #191919;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+    border-radius: 6px;
+    position: absolute;
+    will-change: transform;
+    z-index: 100;
+    cursor: initial;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    top: calc(100% + 7px + 0px);
+    display: none;
+}
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer .tooltip-triangle-container {
+    right: 0;
+    left: 48%;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer .tooltip-triangle-container .tooltip-triangle {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-bottom-color: #fff;
+    transform: initial;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer .tooltipContent {
+    padding: 10px 19px;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer .tooltipContent .loggedOutAppreciation {
+    padding: 20px 30px 5px;
+    width: 375px;
+}
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer .tooltipContent .loggedOutAppreciation .signUpTitle {
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer .tooltipContent .loggedOutAppreciation .signUpMessage {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+ .SignUpContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper .tooltipContainer .tooltipContent .loggedOutAppreciation .signUpMessage a {
+    color: #191919;
+    text-decoration: underline;
+}
+
+ .SignUpContent .signupButton {
+    padding: 0;
+    border-radius: 100px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    transition-duration: 300ms;
+    transition-property: color, background, border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background: rgb(0 87 255);
+    border: 1px solid #00000000;
+    color: rgb(255 255 255);
+    white-space: nowrap;
+    margin-right: 12px;
+    font-size: 14px;
+    height: auto;
+    cursor: pointer;
+}
+.SignUpContent .signupButton .phoneLabel {
+    display: none;
+}
+ .SignUpContent .signupButton:hover {
+    background-color: rgb(0 62 203);
+}
+.SignUpContent .SignUpButtons {
+    color: #959595;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.SignUpContent a {
+    transition-duration: .2s;
+    transition-property: filter;
+    width: 32px;
+    margin-right: 10px;
+}
+ .SignUpContent a:hover {
+    filter: brightness(90%);
+}
+ .SignUpContent .signupButton .btnLabelWrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 18px;
+    cursor: pointer;
+}
+
+.SignUpContent .signupButton .btnLabelWrapper .btnLabel {
+    border: 1px solid transparent;
+    display: inline-block;
+    max-width: 100%;
+}
+.appreciateBottomContainer .appreciateBottom .Tooltip-wrapper:hover .tooltipContainer{
+    display: block;
+}
+.appreciateBottomContainer .projectInfoSection {
+    padding-top: 18px;
+}
+
+.appreciateBottomContainer .projectInfoSection .projectName {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 auto 10px;
+}
+
+.appreciateBottomContainer .projectInfoSection  .projectStats {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.appreciateBottomContainer .projectInfoSection .projectStats svg {
+    fill: #959595;
+    margin-right: 2px;
+}
+
+.appreciateBottomContainer .projectInfoSection .projectStats .projectStat {
+    color: #959595;
+    display: flex;
+    font-size: 14px;
+    height: 17px;
+    line-height: 1.2;
+}
+.appreciateBottomContainer .projectInfoSection .projectStats .projectStat:not(:last-child) {
+    margin-right: 9px;
+}
+
+.appreciateBottomContainer .projectInfoSection .projectPublished {
+     color: #959595;
+    padding-top: 24px;
+}
+.otherProjects {
+    background-color: #191919;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.otherProjects .otherProjectsHeader {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    left: 50px;
+    line-height: 1;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+}
+
+.otherProjects .otherProjectsHeader .userAvatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.otherProjects .otherProjectsHeader .userAvatar .popoverActivator {
+    align-items: center;
+    display: flex;
+}
+
+.otherProjects .otherProjectsHeader .userAvatar .popoverActivator .avatar {
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    backface-visibility: hidden;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    box-sizing: content-box !important;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: filter .2s linear;
+}
+.otherProjects .otherProjectsHeader .userAvatar .popoverActivator .avatar:hover {
+    filter: brightness(80%);
+}
+.otherProjects .otherProjectsHeader .userAvatar .popoverActivator .avatar img {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.otherProjects .otherProjectsHeader .userInfo {
+    display: inline-block;
+    padding-top: 1px;
+}
+
+.otherProjects .otherProjectsHeader .userInfo .singleOwnerContainer {
+    display: flex;
+}
+
+.otherProjects .otherProjectsHeader .userInfo .followButtonContainer {
+    padding-top: 7px;
+}
+
+.otherProjects .otherProjectsHeader .userInfo .singleOwnerContainer .popoverActivator {
+    color: #fff;
+}
+
+.otherProjects .otherProjectsHeader .userInfo .followButtonContainer .userFollow {
+    display: inline-block;
+}
+
+.otherProjects .otherProjectsHeader .userInfo .followButtonContainer .userFollow a {
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    line-height: 1.25;
+    text-shadow: none;
+    transition-duration: 300ms;
+    transition-property: background, color, border;
+    transition-timing-function: linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: top;
+    background-color: #0057ff;
+    background-image: none;
+    border: 1px solid transparent;
+    font-size: 12px;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.otherProjects .otherProjectsHeader .userInfo .followButtonContainer .userFollow .followButton:hover{
+    background-color: rgb(0 62 203);
+}
+
+.otherProjects .otherProjectsHeader .userInfo .followButtonContainer .userFollow .followingButton {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e8e8e8;
+    color: #191919;
+    display: none;
+}
+
+.otherProjects .otherProjectsHeader .userInfo .followButtonContainer .userFollow .unfollowButton {
+    background-color: #d00d00;
+    color: #fff;
+    display: none;
+}
+.otherProjects .scrollerProjectWrapper {
+    cursor: grab;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 120px 50px 50px;
+    text-align: left;
+    white-space: nowrap;
+}
+.projectCommentInput .SignUpContent {
+    justify-content: start;
+}
+.scrollerContainer {
+    position: relative;
+}
+.commentContainer {
+    margin-bottom: 45px;
+}
+.ProjectComments .commentContainer:first-child {
+    padding-top: 27px;
+}
+
+.commentContainer .comment {
+    display: flex;
+    position: relative;
+}
+
+.commentContainer .comment .avatar {
+    float: left;
+    height: 50px;
+    margin-right: 20px;
+    min-height: 50px;
+    min-width: 50px;
+    width: 50px;
+}
+.commentContainer .comment .avatar:hover {
+    filter: brightness(80%);
+}
+.commentContainer .comment .avatar img {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.commentContainer .comment .commentTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 70px);
+}
+
+.commentContainer .comment .commentTextContainer .commentInfo {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: -2px 0 5px;
+}
+
+.commentContainer .comment .commentTextContainer .commentText {
+    color: #484848;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: initial;
+    word-wrap: break-word;
+}
+
+.commentContainer .comment .commentTextContainer .commentInfo .userName {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.commentContainer .comment .commentTextContainer .commentInfo .commentTimestamp {
+    color: #959595;
+}
+
+.commentContainer .comment .commentTextContainer .commentInfo .commentTimestamp:before {
+    content: "•";
+    margin: 0 4px 0 2px;
+}
+.ProjectComments-seeMore {
+    color: #0057ff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 75px;
+    line-height: 73px;
+    margin: 40px -30px -27px;
+    text-align: center;
+    transition: all .15s linear;
+}
+
+.ProjectComments-seeMore svg {
+    fill: #0057ff;
+    height: 10px;
+    stroke: #0057ff;
+    transform: rotate(270deg);
+}
+.ProjectComments-seeMore:hover {
+    background: #f0f0f0;
+    transition: all .15s linear;
+}
+.ProjectInfo-sideBar {
+    display: inline-block;
+    max-width: 385px;
+    text-align: left;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: dimgray;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 30px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks h2 {
+    color: #707070;
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40px;
+    width: inherit;
+    margin-bottom: 15px;
+}
+
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .avatar {
+    align-self: center;
+    float: left;
+    margin-right: 10px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .avatar .avatarLink {
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    backface-visibility: hidden;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    box-sizing: content-box !important;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: filter .2s linear;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .avatar .avatarLink:hover {
+    filter: brightness(80%);
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .avatar .avatarLink img {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userInfo {
+    line-height: 15px;
+    max-width: calc(100% - 50px);
+    display: inline-block;
+    height: 100%;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userInfo .userName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #191919;
+    display: block;
+    flex-shrink: 1;
+    font-size: inherit;
+    font-weight: 600;
+    max-width: 100%;
+    padding-bottom: 3px;
+    text-align: left;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userInfo .userLocation {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: dimgray;
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    max-width: 100%;
+    text-align: left;
+    transition: color .2s;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userInfo .userLocation:hover {
+    color: #191919;
+    text-decoration: none;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userInfo .userLocation svg {
+    fill: #959595;
+    margin-right: 2px;
+    transition: fill .2s;
+    width: 8px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userActions {
+    align-self: center;
+    margin-left: auto;
+    padding-top: 19px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton button {
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.25;
+    padding: 9px 18px;
+    text-shadow: none;
+    transition-duration: 300ms;
+    transition-property: background, color, border;
+    transition-timing-function: linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: rgb(245 248 255);
+    border-color: rgb(222 232 255);
+    color: rgb(0 87 255);
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userActions a {
+    background-color: #0057ff;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 9px 18px;
+    text-shadow: none;
+    transition-duration: 300ms;
+    transition-property: background, color, border;
+    transition-timing-function: linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userActions a svg {
+    fill: #fff;
+    height: 19px;
+    margin-right: 7px;
+    width: 18px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userActions .following {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e8e8e8;
+    color: #191919;
+    font-size: 14px;
+    display: none;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userActions .unfollow {
+    background-color: #d00d00;
+    color: #fff;
+    display: none;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userActions  .follow:hover {
+    background-color: rgb(0 62 203);
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton button svg {
+    width: 18px;
+    fill: rgb(0 87 255);
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .userActions .messageButton {
+    display: flex;
+    max-width: 100%;
+    white-space: nowrap;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton button:hover {
+       background-color: rgb(222 232 255);
+    border-color: rgb(191 210 255);
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton {
+    width: 100%;
+    position: relative;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton:hover .tooltip-container {
+    display: block;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container {
+    min-width: 310px;
+    left: 50%;
+    margin-left: -50%;
+    top: calc(100% + 75px);
+    background-color: 191919;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper {
+    align-items: flex-start;
+    color: #191919;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 100%;
+    padding: 10px 10px 0px;
+    text-align: left;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item svg {
+    margin-bottom: auto;
+    vertical-align: middle;
+    width: 22px;
+    fill: gray;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item .tooltip-list-item-text {
+    flex: 1 0 24px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item .tooltip-list-item-text::after {
+    border-style: solid;
+    border-width: 5px;
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-color: transparent transparent #191919 transparent;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid dimgray;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top .tooltip-list-item-text-container {
+    flex: 1;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top .tooltip-list-item-text-container .tooltip-list-item-subtext {
+    color: #707070;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top .tooltip-list-item-text-container .tooltip-list-item-text {
+    color: #fff;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .userProfile .messageButton .Tooltip-trigger .tooltip-container .tooltip-text-wrapper .tooltip-item.border-top svg {
+    fill: #fff;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectStats {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectStats .projectStat {
+    color: dimgray;
+    display: flex;
+    font-size: 14px;
+    height: 17px;
+    line-height: 17px;
+    margin-right: 9px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectStats .projectStat svg {
+    fill: dimgray;
+    margin-right: 2px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectPublished {
+    color: #3c3c3c;
+    font-size: 12px;
+    margin-top: 25px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool {
+    margin-bottom: 8px;
+}
+
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool a {
+    background-color: #959595;
+    color: #fff;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool a::before {
+    border: 1px solid #0057ff;
+    border-radius: 14px;
+    bottom: -4px;
+    content: "";
+    left: -4px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    transform: scale(0.8);
+    transition: opacity .15s ease, transform .15s ease;
+    z-index: 0;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool:nth-child(1) a {
+    background-color: #00005B;
+}
+
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool:nth-child(2) a {
+    background-color: #00005B;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool:nth-child(3) a {
+        background-color: #001E36;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool a > img {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    mix-blend-mode: luminosity;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool .overlay {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    min-height: 47px;
+    padding: 10px 30px 12px;
+    position: relative;
+    transition: background-color .15s linear;
+    border-radius: 6px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool:hover .overlay {
+    background-color: rgba(0, 0, 0, .6);
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool .overlay > img {
+    height: 25px;
+    margin-right: 5px;
+    width: 25px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .pillShapedTool .overlay p {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-top: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .toolWithText {
+    display: inline-block;
+    margin-top: 5px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .toolWithText:not(:last-child)::after {
+    content: ", ";
+    font-weight: bold;
+    margin-right: 2px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTools .toolWithText a {
+    color: #191919;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields {
+    margin-top: 30px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField {
+    margin-bottom: 8px;
+}
+
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField a {
+    background-color: #959595;
+    color: #fff;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField a::before {
+    border: 1px solid #0057ff;
+    border-radius: 14px;
+    bottom: -4px;
+    content: "";
+    left: -4px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    transform: scale(0.8);
+    transition: opacity .15s ease, transform .15s ease;
+    z-index: 0;
+}
+
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField a > img {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    mix-blend-mode: luminosity;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField .overlay {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    min-height: 47px;
+    padding: 10px 30px 12px;
+    position: relative;
+    transition: background-color .15s linear;
+    border-radius: 6px;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField:hover .overlay {
+    background-color: rgba(0, 0, 0, .6);
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField .overlay > img {
+    height: 25px;
+    margin-right: 5px;
+    width: 25px;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .creativeFields .creativeField .overlay p {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-top: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTags li {
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 8px 8px 0;
+}
+
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTags li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 50px;
+    color: #191919;
+    display: block;
+    padding: 7px 20px;
+    text-decoration: none;
+}
+.ProjectInfo-sideBar .projectInfo-infoBlocks .projectTags li a:hover {
+    background-color: #f0f0f0;
+}
+.copyright {
+    color: #707070;
+}
+
+.copyright .tooltipContainer {
+    display: none;
+}
+
+.copyright .tooltips {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: -6px;
+    padding-bottom: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.copyright .tooltips .tooltipTrigger {
+    position: relative;
+    z-index: 2;
+}
+
+.copyright .tooltips .tooltipTrigger label {
+    color: #3c3c3c;
+    display: block;
+    margin-top: 5px;
+}
+.otherProjects .scrollerProjectWrapper .owl-carousel .owl-nav button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0 3px 6px rgba(25, 25, 25, .16);
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.otherProjects .scrollerProjectWrapper .owl-carousel .owl-nav .owl-prev {
+    left: -20px;
+}
+
+.otherProjects .scrollerProjectWrapper .owl-carousel .owl-nav .owl-next {
+    right: -20px;
+}
+
+.otherProjects .scrollerProjectWrapper .owl-carousel .owl-nav button i {
+    font-size: 16px;
+}
+
+.otherProjects .scrollerProjectWrapper .owl-carousel .owl-nav button.disabled {
+    display: none;
+}
 @media (max-width: 1024px) {
     .header_top_mb{
         display: block;
@@ -7925,8 +10620,85 @@ fill: rgb(25 25 25);
         min-height: 230px;
         padding-bottom: 0;
     }
+    .project_details_wrapper .sidebar{
+        position: relative;
+        top: -44px;
+    }
+    .project_details_wrapper .sidebar .user-actions {
+        align-items: start;
+        margin-left: 20px;
+        top: -15px;
+        display: flex;
+        position: absolute;
+        right: 20px;
+    }
+    
+    .project_details_wrapper .sidebar .user-actions .avatar,.project_details_wrapper .sidebar .user-actions .action-name {
+        display: none;
+    }
+    
+    .project_details_wrapper .sidebar .user-actions .save span, .project_details_wrapper .sidebar .user-actions .share span, .project_details_wrapper .sidebar .user-actions .appreciate span {
+        display: none;
+    }
+    
+    .project_details_wrapper .sidebar .user-actions .save button, .project_details_wrapper .sidebar .user-actions .appreciate button, .project_details_wrapper .sidebar .user-actions .share button {
+        width: 32px;
+        height: 32px;
+        margin-left: 10px;
+    }
+    
+    .project_details_wrapper .sidebar .user-actions .save button svg, .project_details_wrapper .sidebar .user-actions .appreciate button svg, .project_details_wrapper .sidebar .user-actions .share button svg {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .project_details_main .project-top-element .project-feature-container {
+        display: none;
+    }
 }
 @media (max-width: 767px) {
+    .project-content-wrap #project-content {
+        padding-top: 30px;
+    }
+    .projectInfo-projectFooter {
+        padding: 16px 20px;
+    }
+    
+    .ProjectComments-projectComment {
+        width: 100%;
+    }
+    .lightbox-modal .lightbox-content {
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+        min-width: 100% !important;
+        padding: 75px 30px 30px;
+    }
+    
+    .lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-close {
+        opacity: 1;
+    }
+    
+    .lightbox-pagination-container {
+        opacity: 1;
+        z-index: 3;
+    }
+    
+    .lightbox-modal .lightbox-caption {
+        display: none;
+    }
+    
+    .lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-image-actions {
+        display: none;
+    }
+    
+    .lightbox-modal .lightbox-content .lightbox-slides-wrapper .lightbox-content-actions .lightbox-main-image {
+        max-width: 100vw;
+    }
+    .grid__item-container {
+        width: 160px;
+        flex-grow: 160;
+    }
     .profile-work-sections{
         grid-template-columns: repeat(2, 1fr);
     }

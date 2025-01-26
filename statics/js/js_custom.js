@@ -152,7 +152,82 @@ $(document).ready(function() {
           lastScrollTop = scrollTop; 
         });
     }
- 
+    if ($(".grid__item-image").length) {
+        $(document).ready(function() {
+            let currentIndex = 0;
+            const gridImages = $('.grid__item-image, .image-element-img'); 
+        
+            gridImages.on('click', function() {
+                currentIndex = gridImages.index(this); 
+                updateLightbox(currentIndex); 
+        
+                if ($(this).hasClass('image-element-img')) {
+                    $('.lightbox-modal').addClass('custom-class'); 
+                } else {
+                    $('.lightbox-modal').removeClass('custom-class');
+                }
+        
+                $('.lightbox-modal').fadeIn();
+            });
+        
+            function updateLightbox(index) {
+                const currentImage = $(gridImages[index]);
+                const defaultAvatar = $('.avatar_default').attr('src');
+                const projectName = $('.project-title').text();
+                const projectOwner = $('.miniprofile-activator').text();
+                const projectOwnerURL = $('.project-owner-name').attr('href');
+                const projectURL = window.location.href;
+        
+                $('.lightbox-main-image').attr('src', currentImage.attr('src'));
+                $('.project-name').text(projectName).attr('href', projectURL);
+                $('.project-thumbnail').attr('src', defaultAvatar);
+                $('.project-link').attr('href', projectURL);
+                $('.project-owner').text(projectOwner).attr('href', projectOwnerURL);
+            }
+        
+            $('.lightbox-pagination-container.previous .btn-inverted').on('click', function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateLightbox(currentIndex); 
+                }
+            });
+        
+            $('.lightbox-pagination-container.next .btn-inverted').on('click', function() {
+                if (currentIndex < gridImages.length - 1) {
+                    currentIndex++;
+                    updateLightbox(currentIndex); 
+                }
+            });
+        
+            $('.lightbox-close').on('click', function() {
+                $('.lightbox-modal').fadeOut();
+            });
+        });
+    }
+    if ($(".owl-product-item").length) {
+        $('.owl-product-item').owlCarousel({
+            loop:false,
+            margin:15,
+            dots:false,
+            responsiveClass:true,
+            navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:true
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                }
+            }
+        });
+    }
+    
     let tooltipTimer = false;
     let isTooltipOpen = false;
     let tooltipDelay = 100;
@@ -189,17 +264,14 @@ $(document).ready(function() {
         isTooltipOpen = false;
     });
 
-    // Popover Logic
     $(document).on('mouseover', '[data-bs-toggle="popover"]', function (e) {
         const popoverInstance = bootstrap.Popover.getInstance(this);
     
         if (!popoverInstance) {
-            // Khởi tạo Popover nếu chưa tồn tại
             $(this).popover({
                 trigger: 'manual',
                 html: true,
                 sanitize: false,
-                placement: 'bottom',
                 customClass: 'custom-popover',
                 popperConfig: function (defaultConfig) {
                     defaultConfig.modifiers.push({
@@ -214,14 +286,10 @@ $(document).ready(function() {
                 },
             }).popover('show');
         } else {
-            // Hiển thị nếu đã tồn tại
             $(this).popover('show');
         }
     });
     
-
-
-     // Logic hiển thị Popover khi di chuột
      $(document).on('mouseover', '[data-bs-toggle="popover"]', function (e) {
         const popoverInstance = bootstrap.Popover.getInstance(this);
         if (!popoverInstance) {
@@ -229,7 +297,6 @@ $(document).ready(function() {
         }
     });
 
-    // Logic ẩn Popover khi rời chuột khỏi phần tử
     $(document).on('mouseleave', '[data-bs-toggle="popover"]', function (e) {
         const $target = $(e.currentTarget);
         popoverTimer = setTimeout(function () {
@@ -237,22 +304,18 @@ $(document).ready(function() {
         }, popoverDelay);
     });
 
-    // Giữ Popover hiển thị khi di chuột vào chính Popover
     $(document).on('mouseover', '.popover', function () {
-        clearPopoverTimeout(); // Xóa timer ẩn
-        isPopoverOpen = true;  // Đánh dấu trạng thái mở
+        clearPopoverTimeout();
+        isPopoverOpen = true;  
     });
 
-    // Ẩn Popover khi rời chuột khỏi Popover
     $(document).on('mouseleave', '.popover', function () {
         popoverTimer = setTimeout(function () {
             $('.popover').popover('hide');
         }, popoverDelay);
-        isPopoverOpen = false; // Đánh dấu trạng thái đóng
+        isPopoverOpen = false; 
     });
 
-
-    // Clear Tooltip Timeout
     function clearTooltipTimeout() {
         if (tooltipTimer) {                            
             window.clearTimeout(tooltipTimer);                                    
@@ -260,7 +323,6 @@ $(document).ready(function() {
         }
     }
 
-    // Clear Popover Timeout
     function clearPopoverTimeout() {
         if (popoverTimer) {
             window.clearTimeout(popoverTimer);
@@ -277,4 +339,5 @@ $(document).ready(function() {
             $('.header').removeClass('fixed');
         }
     });
+
 });
