@@ -5028,7 +5028,20 @@ align-items: baseline;
 .footer-section {
     width: 200px;
 }
+.footer-section ul li a span {
+    fill: #ccc;
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+}
 
+.footer-section ul li a span svg {
+    height: 100%;
+    width: 100%;
+}
+.footer-section .StaticFooter-iconClass-JdV .StaticFooter-iconFillClass-zNl {
+    fill: #191919;
+}
 .footer-section-header {
     color: #fff;
     font-size: 16px;
